@@ -3,10 +3,138 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root.theme-light {
+  --bg-color: #ffc2e6;
+  --main-text-color: #353430;
+  --accent-color: #ff8dcb;
+  --header-title-color: #ffc2e6;
+  --shadow-color: #db00ff;
+  --hover-border-color: #ff0070;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #ffc2e6;
+    --main-text-color: #353430;
+    --accent-color: #ff8dcb;
+    --header-title-color: #ffc2e6;
+    --shadow-color: #db00ff;
+    --hover-border-color: #ff0070;
+  }
+}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-color: #ffc2e6;
+  --main-text-color: #353430;
+  --accent-color: #ff8dcb;
+  --header-title-color: #ffc2e6;
+  --shadow-color: #db00ff;
+  --hover-border-color: #ff0070;
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+  background-image: url(../images/cover-image-light.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.theme_light .header {
+  background-image: none;
+}
+
+.theme_light .decorated-zone::before {
+  display: none;
+}
+
+.theme_light .decorated-zone::after {
+  width: 25px;
+  height: 25px;
+  border-inline-end: 1px solid var(--main-text-color);
+  border-block-start: 1px solid var(--main-text-color);
+}
+
+.theme_light .header__theme-menu::before {
+  display: none;
+}
+
+.theme_light .header__text::after {
+  border-inline-start: 1px solid var(--main-text-color);
+  border-block-end: 1px solid var(--main-text-color);
+}
+
+.theme_light .header__theme-menu-list {
+  color: inherit;
+}
+
+.theme_light .header__theme-menu-button_active {
+  pointer-events: none;
+  outline: 1px solid var(--main-text-color);
+}
+
+.theme_light .header__theme-menu-button_type_light:hover {
+  border: 1px solid;
+  border-color: rgba(255, 0, 112 / 0.4);
+}
+
+.theme_light .header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--hover-border-color);
+}
+
+.theme_light .header__theme-menu-button_type_dark:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--hover-border-color);
+}
+
+.theme_light .header__theme-menu-button_type_light:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--main-text-color);
+}
+
+.theme_light .header__title {
+  text-shadow: 4px 4px 0 var(--shadow-color);
+}
+
+.theme_light .header__text {
+  color: inherit;
+}
+
+.theme_light .content__section-title {
+  color: inherit;
+}
+
+.theme_light .content__section-subtitle {
+  color: inherit;
+}
+
+.theme_light .card__title {
+  color: inherit;
+}
+
+.theme_light .footer__title {
+  text-shadow: 2px 2px 0px var(--shadow-color);
+}
+
+.theme_light .footer::before {
+  border-inline-start: 1px solid var(--main-text-color);
+  border-block-end: 1px solid var(--main-text-color);
+}
+
+.theme_light .footer::after {
+  border-inline-end: 1px solid var(--main-text-color);
+  border-block-start: 1px solid var(--main-text-color);
+}
+
+@media (width < 1024px) {
+  .theme_light .header__title {
+    text-shadow: 4px 4px 0 var(--accent-color);
+  }
+
+  .theme_light .footer__title {
+    text-shadow: 2px 2px 0px var(--accent-color);
+  }
 }

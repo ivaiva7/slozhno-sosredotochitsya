@@ -39,4 +39,19 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  appearance: none;
+  display: inline-block;
+}
+
+:has(:focus-visible) {
+  appearance: none;
+  outline: none;
+}
+
+p {
+  display: inline-block;
+}
+
+img {
+  display: inline-block;
 }
