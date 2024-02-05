@@ -43,13 +43,13 @@ a {
   display: inline-block;
 }
 
-:has(:focus-visible) {
-  appearance: none;
+:has(:focus) {
   outline: none;
 }
 
-p {
-  display: inline-block;
+:has(:focus-visible) {
+  appearance: none;
+  outline: none;
 }
 
 img {
