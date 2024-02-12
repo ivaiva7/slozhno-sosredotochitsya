@@ -32,18 +32,18 @@
 @media (prefers-color-scheme: light) {
   .page {
     --bg-color: #ffc2e6;
-  --main-text-color: #353430;
-  --accent-color: #ff8dcb;
-  --title-text-color: #353430;
-  --nav-list-color: #353430;
-  --header-title-color: #ffc2e6;
-  --content-section-title-color: #353430;
-  --focus-color: #ff0070;
-  --hover-border-color: rgba(255, 0, 112, .4);
-  --hover-color: rgba(53, 52, 48, .4);
-  --background-pic: url(../images/cover-image-light.png);
+    --main-text-color: #353430;
+    --accent-color: #ff8dcb;
+    --title-text-color: #353430;
+    --nav-list-color: #353430;
+    --header-title-color: #ffc2e6;
+    --content-section-title-color: #353430;
+    --focus-color: #ff0070;
+    --hover-border-color: rgba(255, 0, 112, .4);
+    --hover-color: rgba(53, 52, 48, .4);
+    --background-pic: url(../images/cover-image-light.png);
   }
-} 
+}
 
 .header {
   inline-size: 100%;
@@ -141,8 +141,8 @@ span::after {
     top: min(1%, 20px);
     right: min(10%, 42px);
   }
-  
-  .theme_dark span::after  {
+
+  .theme_dark span::after {
     content: '';
     display: inline-block;
     width: 9px;
@@ -376,7 +376,7 @@ span::after {
 
   .theme_dark span {
     top: 20px;
-    right:45px;
+    right: 45px;
   }
 
   span::after {
@@ -575,4 +575,3 @@ span::after {
     text-shadow: 2px 2px 0px var(--shadow-color);
   }
 }
-
