@@ -7,6 +7,26 @@
   --main-font: 'IBM Plex Mono', sans-serif;
   --bg-color: #000028;
   --main-text-color: #f1b2ce;
+  --shadow-color: #ff0070;
   --accent-color: #ff0070;
   --header-title-color: #db00ff;
+  --background-pic: url(../images/cover-image-dark.png);
 }
+
+/*:root .theme_light {
+  --bg-color: #ffc2e6;
+  --main-text-color: #353430;
+  --accent-color: #ff8dcb;
+  --header-title-color: #ffc2e6;
+  --focus-color: #ff0070;
+  --hover-border-color: rgba(255, 0, 112, .4);
+  --hover-color: rgba(53, 52, 48, .4);
+  --background-pic: url(../images/cover-image-light.png);
+} */
+
+/*:root .theme_auto {
+  background-image: var(--background-pic);
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+  
+}*/

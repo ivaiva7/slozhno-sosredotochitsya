@@ -5,8 +5,13 @@
   */
   --bg-color: #000028;
   --main-text-color: #f1b2ce;
+  --title-text-color: #000028;
+  --content-section-title-color: #ff0070;
+  --nav-list-color: #ff0070;
   --accent-color: #ff0070;
+  --shadow-color: #ff0070;
+  --focus-color: #353430;
   --header-title-color: #db00ff;
-  background-color: var(--bg-color);
-  color: var(--main-text-color);
+  --hover-color: rgba(255, 0, 112, 0.4);
+  --background-pic: url(../images/cover-image-dark.png);
 }
