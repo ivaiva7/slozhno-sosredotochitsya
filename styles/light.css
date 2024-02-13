@@ -10,8 +10,33 @@
   --title-text-color: #353430;
   --header-title-color: #ffc2e6;
   --focus-color: #ff0070;
+  --shadow-color: #ff0070;
   --nav-list-color: #353430;
-  --hover-border-color: rgba(255, 0, 112, .4);
   --hover-color: rgba(53, 52, 48, .4);
   --background-pic: url(../images/cover-image-light.png);
+}
+
+@media (prefers-color-scheme: light) {
+  .page {
+    --bg-color: #ffc2e6;
+    --main-text-color: #353430;
+    --accent-color: #ff8dcb;
+    --title-text-color: #353430;
+    --nav-list-color: #353430;
+    --header-title-color: #ffc2e6;
+    --shadow-color: #ff0070;
+    --content-section-title-color: #353430;
+    --focus-color: #ff0070;
+    --hover-color: rgba(53, 52, 48, .4);
+    --background-pic: url(../images/cover-image-light.png);
+  }
+
+  span { /*если не ставить тему в этом случае ломается верстка и текстовый декор остается в светлой теме*/
+    display: none;
+  }
+  
+  span::after { /*если не ставить тему в этом случае ломается верстка и текстовый декор остается в светлой теме*/
+    display: none;
+  }
+
 }

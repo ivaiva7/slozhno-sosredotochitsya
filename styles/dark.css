@@ -15,3 +15,19 @@
   --hover-color: rgba(255, 0, 112, 0.4);
   --background-pic: url(../images/cover-image-dark.png);
 }
+
+@media (prefers-color-scheme: dark) {
+  .page {
+    --bg-color: #000028;
+    --main-text-color: #f1b2ce;
+    --title-text-color: #000028;
+    --nav-list-color: #ff0070;
+    --accent-color: #ff0070;
+    --focus-color: #ff0070;
+    --shadow-color: #ff0070;
+    --header-title-color: #db00ff;
+    --content-section-title-color: #ff0070;
+    --hover-color: rgba(255, 0, 112, 0.4);
+    --background-pic: url(../images/cover-image-dark.png);
+  }
+}
