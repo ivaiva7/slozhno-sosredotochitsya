@@ -16,6 +16,10 @@
   --background-pic: url(../images/cover-image-light.png);
 }
 
+.theme_light span {
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
   .page {
     --bg-color: #ffc2e6;
@@ -31,11 +35,7 @@
     --background-pic: url(../images/cover-image-light.png);
   }
 
-  .theme_auto span { /*если не ставить тему в этом случае ломается верстка и текстовый декор остается в светлой теме*/
-    display: none;
-  }
-  
-  .theme_auto span::after { /*если не ставить тему в этом случае ломается верстка и текстовый декор остается в светлой теме*/
+  span { 
     display: none;
   }
 

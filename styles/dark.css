@@ -16,6 +16,10 @@
   --background-pic: url(../images/cover-image-dark.png);
 }
 
+.theme_dark span {
+  display: block;
+}
+
 @media (prefers-color-scheme: dark) {
   .page {
     --bg-color: #000028;
@@ -29,5 +33,9 @@
     --content-section-title-color: #ff0070;
     --hover-color: rgba(255, 0, 112, 0.4);
     --background-pic: url(../images/cover-image-dark.png);
+  }
+
+  span {
+    display: block;
   }
 }
